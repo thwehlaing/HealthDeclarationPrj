@@ -1,0 +1,133 @@
+﻿
+
+<form class="needs-validation" novalidate>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="name">*Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Name" required>
+            <div class="invalid-feedback">
+                This is required.
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="businessemail">*Business Email:</label>
+            <input type="text" class="form-control" id="businessemail" placeholder="Business Email" required>
+            <div class="invalid-feedback">
+                This is required.
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="companyname">*Company Name:</label>
+            <input type="text" class="form-control" id="companyname" placeholder="Company Name" required>
+            <div class="invalid-feedback">
+                This is required.
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="designation">Designation:</label>
+            <input type="text" class="form-control" id="designation" placeholder="Designation">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="businessnumber">*Business Number:</label>
+            <input type="text" class="form-control" id="businessnumber" placeholder="Business Number" required>
+            <div class="invalid-feedback">
+                This is required.
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="licenseplate">License Plate:</label>
+            <input type="text" class="form-control" id="licenseplate" placeholder="License Plate">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-12 mb-3">
+            <label for="nric">NRIC/FIN Number(Last 4 characters)*:</label>
+            <input type="text" class="form-control" id="nric" placeholder="Comment">
+        </div>
+    </div>
+
+
+    <div class="form-row mb-3">
+        <div class="col-md-12">
+            <label for="nric">1. Are you currently under a Quarantine Order, Stay Home Notice? </label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio1yes" name="radio1" class="custom-control-input">
+            <label class="custom-control-label" for="radio1yes">YES</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio1no" name="radio1" class="custom-control-input" checked>
+            <label class="custom-control-label" for="radio1no">NO</label>
+        </div>
+    </div>
+
+    <div class="form-row mb-3">
+        <div class="col-md-12">
+            <label for="nric">2. Have you had close contact with a confirmed COVID-19 case in the past 14 days? </label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio2yes" name="radio2" class="custom-control-input">
+            <label class="custom-control-label" for="radio2yes">YES</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio2no" name="radio2" class="custom-control-input" checked>
+            <label class="custom-control-label" for="radio2no">NO</label>
+        </div>
+    </div>
+
+    <div class="form-row mb-3">
+        <div class="col-md-12">
+            <label for="nric">3. Do you have any fever or flu-like symptoms? </label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio3yes" name="radio3" class="custom-control-input">
+            <label class="custom-control-label" for="radio3yes">YES</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="radio3no" name="radio3" class="custom-control-input" checked>
+            <label class="custom-control-label" for="radio3no">NO</label>
+        </div>
+    </div>
+    
+
+    <div class="form-row form-check">
+        <input type="checkbox" class="form-check-input" id="chk">
+        <label class="form-check-label" for="chk">By completing this online form, I acknowledge and consent to the collection, use and disclosure of my personal data for security varification, access control and saftly purposes</label>
+    </div>
+
+    <div class="row">
+        <div class="col text-center">
+            <button class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+
+
+
+
+</form>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields  
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
